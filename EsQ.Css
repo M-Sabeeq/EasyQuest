@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: -moz-linear-gradient(#a68837);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+
+}
+.Register{
+    width: 350px;
+    height: 450px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
