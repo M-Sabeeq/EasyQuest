@@ -73,15 +73,19 @@ p {
   .SI_area .titleHolder {
     margin: 0 0 30px;
   }
+
+  .addup{
+    list-style: none;
+  }
   
-  .listHolder li {
+  .HT li {
     counter-increment: step-counter;
     overflow: hidden;
     padding: 0 0 20px 30px;
     position: relative;
   }
   
-  .listHolder li:before {
+  .HT li:before {
     content: counter(step-counter);
     background: #4ac7be;
     color: #fff;
@@ -93,11 +97,11 @@ p {
     left: 0;
   }
   
-  .listHolder .listName {
+  .HT .listName {
     float: left;
   }
   
-  .listHolder .btn-icon {
+  .HT .btn-icon {
     float: right;
     margin: 0 0 0 20px;
   }
