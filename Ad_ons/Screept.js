@@ -1,3 +1,19 @@
+  var db = new Dexie("Subjects");
+
+  const db = new Dexie('Subjects');
+db.version(1).stores({
+    data: '++id, name, age',
+});
+
+  // DB with single table "Subjects" with primary key "id" and
+  // indexes on properties "SubjectName"
+  db.version(1).stores({
+    friends: `
+      id,
+      name,
+      age`,
+  });
+
 const addInput = document.querySelector ('#addInput');
 const addBtn = document.querySelector ('#addBtn');
 const toggleBtn = document.querySelector('#toggleBtn');
