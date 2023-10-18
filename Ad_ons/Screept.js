@@ -9,10 +9,17 @@ db.version(1).stores({
   // indexes on properties "SubjectName"
   db.version(1).stores({
     friends: `
-      id,
-      name,
-      age`,
+      id 1, 
+      SubjectName English,`, 
   });
+
+  table.put(Subject, [1])
+  db.version(2).stores({
+    Subjects:
+    id 1,
+    English,''
+  });
+ 
 
 const addInput = document.querySelector ('#addInput');
 const addBtn = document.querySelector ('#addBtn');

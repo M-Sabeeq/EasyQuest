@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    text-align: right;
+    gap: 15px;
+}
+nav{
+    
+}
+
+.editable-list, li{
+    list-style: none;
+}
