@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
 }
-
+/* navbar  section*/
 nav{
     display: flex;
     justify-content: right;
@@ -12,8 +12,10 @@ nav{
 }
 nav{
     
+
 }
 
+/* placeholder for questions*/
 .editable-list, li{
     list-style: none;
 }
