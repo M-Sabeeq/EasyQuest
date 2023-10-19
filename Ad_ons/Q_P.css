@@ -10,12 +10,46 @@ nav{
     text-align: right;
     gap: 15px;
 }
-nav{
-    
 
+nav{
+    color: white;
+}
+
+nav{
+    background-color: #f44322;
+
+}
+a{
+    border-color: aqua;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #12439e;
+    transition: 0.3s;
+}
+
+#add-item {
+border-color: #1453e2;
+color: gray;
+background-color: aquamarine;
+}
+
+#add-item:hover{
+    color: #12439e;
+    transition: 0.3s;
 }
 
 /* placeholder for questions*/
+
 .editable-list, li{
     list-style: none;
+    border-color: #1453e2;
+    border:#1453e2
+}
+
+li{
+    color: black;
+    text-decoration: black;    
 }
