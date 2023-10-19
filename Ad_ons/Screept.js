@@ -7,7 +7,7 @@ const addBtn = document.querySelector ('#addBtn');
 const toggleBtn = document.querySelector('#toggleBtn');
 const divList = document.querySelector('.HT');
 const listUL = document.querySelector('.addup');
-const deleteBtn = document.querySelector('#deleteBtn')
+const deleteBtn = document.querySelector('#deleteBtn');
 
 toggleBtn.addEventListener('click', () => {
     if(divList.style.display === 'none') {
@@ -30,8 +30,13 @@ addBtn.addEventListener('click', () => {
     ul.appendChild(li);
 });
 
-deleteBtn.addEventListener('click', () => {
-  const ul = divList.querySelector ('ul');
-  const li = document.removeChild ('li');
-  li.innerHTML = deleteBtn.value;
-})
+
+deleteBtn.addEventListener('click', function() {
+  if (divList.children.length > 0) {
+    const lastItem = divList.lastChild;
+    divList.removeChild(lastItem);
+  } else {
+    alert("The List is empty. Nothing to Delete.");
+  }
+});
+  
