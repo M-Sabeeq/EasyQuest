@@ -1,31 +1,13 @@
   var db = new Dexie("Subjects");
 
-  const db = new Dexie('Subjects');
-db.version(1).stores({
-    data: '++id, name, age',
-});
 
-  // DB with single table "Subjects" with primary key "id" and
-  // indexes on properties "SubjectName"
-  db.version(1).stores({
-    friends: `
-      id 1, 
-      SubjectName English,`, 
-  });
-
-  table.put(Subject, [1])
-  db.version(2).stores({
-    Subjects:
-    id 1,
-    English,''
-  });
- 
 
 const addInput = document.querySelector ('#addInput');
 const addBtn = document.querySelector ('#addBtn');
 const toggleBtn = document.querySelector('#toggleBtn');
 const divList = document.querySelector('.HT');
 const listUL = document.querySelector('.addup');
+const deleteBtn = document.querySelector('#deleteBtn')
 
 toggleBtn.addEventListener('click', () => {
     if(divList.style.display === 'none') {
@@ -47,3 +29,9 @@ addBtn.addEventListener('click', () => {
     addInput.value = '';
     ul.appendChild(li);
 });
+
+deleteBtn.addEventListener('click', () => {
+  const ul = divList.querySelector ('ul');
+  const li = document.removeChild ('li');
+  li.innerHTML = deleteBtn.value;
+})
