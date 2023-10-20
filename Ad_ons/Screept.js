@@ -32,9 +32,9 @@ addBtn.addEventListener('click', () => {
 
 
 deleteBtn.addEventListener('click', function() {
-  if (divList.children.length > 0) {
-    const lastItem = divList.lastChild;
-    divList.removeChild(lastItem);
+  if (listUL.children.length > 0) {
+    const lastItem = listUL.lastChild;
+    listUL.removeChild(lastItem);
   } else {
     alert("The List is empty. Nothing to Delete.");
   }
