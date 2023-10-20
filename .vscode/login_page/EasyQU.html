@@ -20,20 +20,49 @@
         <h1>Sign Up/Login</h1>
         
             <p>Username</p> 
-            <input id="uname" type="text" name="" placeholder="Enter Username">
-            <p>Password</p>
-            <input id="pword" type="password" name="" placeholder="Enter Password">
-             
-            <a href="http://127.0.0.1:5501/Ad_ons/LoginPage.html"> 
-                <button>Login</button>
-            </a>
-            <br><br>   
+            <div id="form" onsubmit="return checkInput()">
+                <input id="uname" type="text" name="" placeholder="Enter Username" required>
+                <p>Password</p>
+                <input id="pword" type="password" name="" placeholder="Enter Password" required>
 
-            <a href="">Sign up</a> <br>
+                <a href="http://127.0.0.1:5501/Ad_ons/LoginPage.html"> 
+                    <button id="login">Login</button>
+                </a>
+            </div> 
+           
+            <br><br> 
+            <!-- Query -->
+            <div id="case">
+                <a href="">Sign up</a> <br>
 
-            <a href="">Forgot Password?</a>
+                 <a href="">Forgot Password?</a>
+
+            </div>
+
+            
       
     </div>
     
+    
+    <script>
+        const loginBtn = document.getElementById('login');
+
+        loginBtn.addEventListener('click', function (checkInput) {
+            const uname = document.getElementById('uname');
+            const pword = document.getElementById('pword');
+            if (uname.value.trim() === '' || pword.value.trim() === '') {
+                alert('Input Username and Password before submitting.');
+            } else {
+                return checkInput(false);
+            }
+            // Continue with form submission if the input is filled.
+            
+        });
+
+
+
+        
+    </script>
+
 </body>
 </html>
