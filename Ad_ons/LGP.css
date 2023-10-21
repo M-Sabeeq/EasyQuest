@@ -14,6 +14,8 @@ body{
 background: rgba(199, 241, 239, 0.466);
 font-family: serif;
 text-align: center;
+max-width: 90%;
+justify-content: center;
 }
 
 h2{

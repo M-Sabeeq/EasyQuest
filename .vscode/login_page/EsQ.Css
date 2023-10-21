@@ -2,6 +2,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-image: url('BG-library.jpg');;
     background: -moz-linear-gradient(#a68837);
     background-size: cover;
     background-position: center;
