@@ -34,12 +34,14 @@ ul.navbar li a {
     border-radius: 8px;
 }
 
+
 ul.navbar li a:hover {
     color: #000;
     background-color:  #a68837;
     transition-delay: initial;
     transition-duration: 0.8s;
 }
+
 
 .Register{
     width: 350px;
@@ -112,4 +114,8 @@ button {
 
 #case a:hover{
     transition: 0.8s;
+}
+
+#case a:hover{
+    transform: scale(1.1);
 }

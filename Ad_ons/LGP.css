@@ -7,7 +7,7 @@ body{
 .form_section{
     margin: 0, auto;
     background: honeydew;
-    max-width: 640px;
+    max-width: 100%;
     padding: 0 15px;
 }
 .subjects{
@@ -73,6 +73,10 @@ p {
     font: 300 16px/1.5 'Roboto', sans-serif;
     transition: background 0.3s linear;
   }
+
+  .btn-primary{
+    border-radius: 8px;
+  }
   
   .btn-primary:hover {
     background: #097fb7;
@@ -96,6 +100,10 @@ p {
     transition: background 0.3s linear;
   }
   
+  #deleteBtn {
+    border-radius: 8px;
+  }
+
   #deleteBtn:hover {
     background: #097fb7;
   }
@@ -138,6 +146,20 @@ p {
     top: 0;
     left: 0;
   }
+
+  .addup li:hover{
+    background-color: rgba(199, 241, 239, 0.466); 
+    transition: 0.8s;
+   
+  }
+
+  .addup li:hover{
+    transform: scale(1.1);
+  }
+
+  .addup li:focus{
+    outline: none;
+  }
   
   .HT .listName {
     float: left;
@@ -156,10 +178,10 @@ p {
   
   .formHolder .col {
     float: right;
-    width: 20%;
+    width: 10%;
     padding: 0 5px;
   }
   
   .formHolder .Btn_section {
-    width: 50%;
+    width: 33%;
   }

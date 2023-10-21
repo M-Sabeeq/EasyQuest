@@ -25,7 +25,7 @@
                 <p>Password</p>
                 <input id="pword" type="password" name="" placeholder="Enter Password" required>
 
-                <a href="http://127.0.0.1:5501/Ad_ons/LoginPage.html"> 
+                <a href="http://127.0.0.1:5501/Ad_ons/LoginPage.html" id="d_link"> 
                     <button id="login">Login</button>
                 </a>
             </div> 
@@ -50,10 +50,12 @@
         loginBtn.addEventListener('click', function (checkInput) {
             const uname = document.getElementById('uname');
             const pword = document.getElementById('pword');
-            if (uname.value.trim() === '' || pword.value.trim() === '') {
+            const d_link = document.getElementById('d_link');
+            if (uname.value.trim() === '' || pword.value.trim() === '' || d_link.value.trim() === '') {
                 alert('Input Username and Password before submitting.');
+                return false;
             } else {
-                return checkInput(false);
+                return true;
             }
             // Continue with form submission if the input is filled.
             
