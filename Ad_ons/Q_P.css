@@ -1,6 +1,8 @@
 body{
     margin: 0;
     padding: 0;
+    background-color:#00000088; 
+    backdrop-filter: blur(20px);
 }
 /* navbar  section*/
 nav{

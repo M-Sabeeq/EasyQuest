@@ -15,10 +15,12 @@ body{
     padding: 0 15px;
 }
 .subjects{
-background: rgba(199, 241, 239, 0.466);
+margin: 0;
+padding: 0;
+
+
 font-family: serif;
 text-align: center;
-max-width: 90%;
 justify-content: center;
 }
 
@@ -26,6 +28,11 @@ h2{
     font-size: 24px;
     font-weight: 300;
     color: #fff;
+}
+
+h2{
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -46,6 +53,7 @@ p {
   }
 
   .title a{
+    color: #fff;
     text-decoration: none;
   }
   .title a:hover{
@@ -53,6 +61,7 @@ p {
   }
  
   .titl a{
+    color: #fff;
     text-decoration: none;
 
   }
@@ -159,8 +168,15 @@ p {
   }
 
   .addup{
+    color: #fff;
     list-style: none;
   }
+
+  .addup li:hover{
+    color: #4ac7be;
+    transition: 0.5s;
+  }
+  
   
   .HT li {
     counter-increment: step-counter;
@@ -183,7 +199,7 @@ p {
 
   .addup li:hover{
     background-color: rgba(199, 241, 239, 0.466); 
-    transition: 0.8s;
+    transition: 0.5s;
    
   }
 

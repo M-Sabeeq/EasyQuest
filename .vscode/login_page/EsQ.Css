@@ -37,6 +37,7 @@ ul.navbar li a {
 
 
 ul.navbar li a:hover {
+    text-decoration: underline;
     color:#a68837;
     background-color:  #00000088;
     transition-delay: initial;
