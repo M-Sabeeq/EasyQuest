@@ -1,12 +1,16 @@
 body{
+    margin: 0;
+    padding: 0;
     font: 300 16px/1.5 'Roboto', sans-serif;
     color: #224945;
     background: #32aa99;
+    background-size: cover;
+    background-image:url('../Ad_ons/SUB-Pg.jpg')
 }
 
 .form_section{
     margin: 0, auto;
-    background: honeydew;
+    background:#00000088;
     max-width: 100%;
     padding: 0 15px;
 }
@@ -21,6 +25,7 @@ justify-content: center;
 h2{
     font-size: 24px;
     font-weight: 300;
+    color: #fff;
 }
 
 
@@ -30,10 +35,7 @@ p {
 
   input[type="text"] {
     width: 100%;
-    height: 40px;
     border: 1px solid #ccc;
-    background: #fff;
-    padding: 10px;
     font: 300 16px/1.5 'Roboto', sans-serif;
     transition: border 0.3s linear;
   }
@@ -60,6 +62,30 @@ p {
 
   }
 
+  .Btn_section{
+    margin: 0px;
+    padding: 6px;
+  }
+
+  .Btn_section{
+    border-radius: 8px;
+  }
+  #addInput{
+    background-color: #00000088;
+    color: #fff;
+  }
+  #addInput{
+    border-radius: 6px;
+  }
+
+  #addInput:hover{
+    transition: 0.3s;
+  }
+
+  #addInput:hover{
+    transform: scale(1.1);
+
+  }
 
 
   .btn-primary {
@@ -68,7 +94,6 @@ p {
     padding: 10px;
     display: inline-block;
     vertical-align: top;
-    width: 100%;
     height: 40px;
     color: #fff;
     cursor: pointer;
@@ -87,6 +112,10 @@ p {
   .btn-primary:focus {
     outline: none;
   }
+  #toggleBtn{
+    display: flex;
+    justify-content: right;
+  }
 
   #deleteBtn {
     background: #4ac7be;
@@ -94,12 +123,16 @@ p {
     padding: 10px;
     display: inline-block;
     vertical-align: top;
-    width: 100%;
     height: 40px;
     color: #fff;
     cursor: pointer;
     font: 300 16px/1.5 'Roboto', sans-serif;
-    transition: background 0.3s linear;
+    transition: background 0.3s linear;  
+  }
+
+  #deleteBtn{
+    display: flex;
+    justify-content: right;
   }
   
   #deleteBtn {
@@ -118,7 +151,6 @@ p {
   .SI_area {
     padding: 30px;
     margin: 30px 0;
-    background: #fff;
     box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.2);
   }
   
@@ -174,14 +206,40 @@ p {
 
 .formHolder {
     margin: 0 -5px;
-    overflow: hidden;
-    position: relative;
+    margin-bottom: 30px;
+    overflow: visible;
+    align-items: center;
+    padding: 0;
   }
+
+  .formHolder col{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .formHolder .coli{
+    border: none;
+    padding: 0px;
+    vertical-align: top;
+    height: 40px;
+    color: #fff;
+    cursor: pointer;
+    font: 300 16px/1.5 'Roboto', sans-serif;
+    transition: background 0.3s linear;
+    gap: 2px;
+}
+
+
+.col{
+  display: flex;
+  justify-content: right;
+}
+  
   
   .formHolder .col {
     float: right;
-    width: 10%;
     padding: 0 5px;
+    justify-content: right;
   }
   
   .formHolder .Btn_section {

@@ -55,8 +55,14 @@
     
     <script>
         const loginBtn = document.getElementById('login');
+        const Register = document.querySelector('.Register')
+       
+        
+
+        Register.classList.add('active');
 
         loginBtn.addEventListener('click', function (checkInput) {
+            Register.classList.add('active');
             const uname = document.getElementById('uname');
             const pword = document.getElementById('pword');
             const d_link = document.getElementById('d_link');

@@ -12,7 +12,7 @@ body{
 }
 
 nav {
-    background-color: #333; 
+    background-color:#00000088; 
     text-align: right;     
     padding: 10px;         
 }
@@ -37,8 +37,8 @@ ul.navbar li a {
 
 
 ul.navbar li a:hover {
-    color: #000;
-    background-color:  #a68837;
+    color:#a68837;
+    background-color:  #00000088;
     transition-delay: initial;
     transition-duration: 0.8s;
 }
@@ -47,7 +47,7 @@ ul.navbar li a:hover {
 .Register{
     width: 350px;
     height: 450px;
-    background: #000;
+    background: #00000088;
     color: #fff;
     top: 50%;
     left: 50%;
@@ -55,7 +55,15 @@ ul.navbar li a:hover {
     transform: translate(-50%, -50% );
     box-sizing: border-box;
     padding: 70px 30px;
+    
 }
+
+.Register{
+    backdrop-filter: blur(20px);
+    border-radius: 12px;
+}
+
+
 h1{
     margin: 0;
     padding: 0 0 20px;
