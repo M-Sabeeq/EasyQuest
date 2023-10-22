@@ -1,4 +1,15 @@
   var db = new Dexie("Subjects");
+  console.log(db);
+
+  var db = new Dexie("My_db");
+  
+
+  db.My_db.put({id: "5ive", subject: "Sly"});
+My_db.version(1).stores({
+  guys:'goons'
+
+});
+
 
 
 
@@ -40,3 +51,4 @@ deleteBtn.addEventListener('click', function() {
   }
 });
   
+
