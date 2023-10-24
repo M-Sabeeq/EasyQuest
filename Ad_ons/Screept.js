@@ -1,14 +1,21 @@
-  var db = new Dexie("Subjects");
-  console.log(db);
-
   var db = new Dexie("My_db");
+
+  db.version(1).stores({
+    My_db: "id, Jss1, Jss2"
+  });
+
+  db.My_db.bulkPut([
+    {id: 1, Jss1: "Literature", Jss2: "Civic" },
+    {id: 1, Jss1: "Tech", Jss2: "Business" },
+    {id: 1, Jss1: "Science", Jss2: "Social" },
+    {id: 1, Jss1: "Hausa", Jss2: "P.H.E" },
+  ]).then(() => {
+    db.My_db.put({ id: 1, Jss1: "English", Jss2: "Maths"});
+  })
+
+
+
   
-
-  db.My_db.put({id: "5ive", subject: "Sly"});
-My_db.version(1).stores({
-  guys:'goons'
-
-});
 
 
 
