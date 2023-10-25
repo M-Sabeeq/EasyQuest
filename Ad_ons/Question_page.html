@@ -7,19 +7,45 @@
     <title>User</title>
 </head>
 <body>
+    <a id="grab">
+
+    </a>
+    <button  type="button" id="downLoader">Download</button>
+
     <header>
-        <nav>
+       <nav>
             <a href="#">Home</a>
             <a href="#">Subjects</a>
             <a href="#">Service</a>
             <a href="#">Profile</a>
             <a href="#">Help</a>
-          </nav>
+      </nav>
     </header>
     
     <ul id="editable-list">
         <li contenteditable="true"> Type Here </li>
     </ul>
     <button id="add-item">Save Questions</button>
+
+    <script>
+
+        downLoad.forEach(button => function {
+        const grab = button.dataset.download;
+        const downLoader = document.getElementById(grab);
+        const a = document.createElement("a");
+    })
+
+        a.href = downLoader.grab;
+        a.download = "";
+        a.style.display = "none";
+
+        button.addEventListener('click', () => {
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        });
+        
+    </script>
+
 
 </body>
